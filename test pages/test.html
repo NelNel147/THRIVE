@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THRIVE</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Font Awesome CDN-->
+<link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> 
+  
+    <!-- For font family Poppins -->
+    <link rel="preconnect" 
+          href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com" crossorigin> 
+    <link href= 
+"https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" 
+          rel="stylesheet"> 
+
+<style> 
+	* { 
+		box-sizing: border-box; 
+	} 
+
+	body { 
+		font-family: 'Poppins', sans-serif; 
+		margin: 0; 
+		padding: 0; 
+		background-image: url( 
+https://media.geeksforgeeks.org/wp-content/uploads/20240109184517/gfg-image.jpg); 
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-color: rgb(90, 90, 90); 
+		background-blend-mode: multiply; 
+		background-position: center; 
+		color: #fff; 
+	} 
+
+	h1, 
+	h3 { 
+		text-align: center; 
+		text-transform: uppercase; 
+	} 
+
+	h1 { 
+		position: relative; 
+		max-width: max-content; 
+		margin: 2rem auto 5rem auto; 
+	} 
+
+	h1::after { 
+		content: ""; 
+		position: absolute; 
+		width: 75%; 
+		height: 5px; 
+		background-color: lightgreen; 
+		bottom: -2rem; 
+		left: 25px; 
+	} 
+
+	i { 
+		font-size: 3rem; 
+		color: lightgreen; 
+		padding: 1rem; 
+		transition: all 0.3s linear; 
+		transform: rotate(-45deg); 
+	} 
+
+	.services-container { 
+		max-width: 1200px; 
+		margin: 0 auto; 
+		padding: 20px; 
+		display: flex; 
+		flex-wrap: wrap; 
+		justify-content: space-around; 
+	} 
+
+	.service-card { 
+		cursor: pointer; 
+		width: 300px; 
+		margin: 20px; 
+		padding: 2rem 20px 20px 20px; 
+		text-align: center; 
+		border-radius: 5px; 
+		transition: all 0.3s ease-in-out; 
+	} 
+
+	.icon-container { 
+		border: 2px solid lightgreen; 
+		transition: 0.3s linear; 
+		width: max-content; 
+		margin: 0 auto; 
+		transform: rotate(45deg); 
+	} 
+
+	.service-card:hover { 
+		box-shadow: 0 0 30px 0 lightgreen; 
+		transform: scale(1.1); 
+	} 
+
+	.service-card a { 
+		color: lightgreen; 
+		text-decoration: none; 
+	} 
+
+	@media (max-width: 768px) { 
+		.service-card { 
+			width: 100%; 
+		} 
+	} 
+</style> 
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicons/favicon1.jpg" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top">THRIVE</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" class="page-scroll">About</a></li>
+        <li><a href="#services" class="page-scroll">Services</a></li>
+        <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
+        <li><a href="#contact" class="page-scroll">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 intro-text">
+            <h1>Landscaping Services</h1>
+            <p>Here to help your Trees Thrive to Survive!</Tarea:r></p>
+            <a href="#about" class="btn btn-custom btn-lg page-scroll">More Info</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h2>Welcome to <span>THRIVE</span></h2>
+          <hr>
+          <p>Transform your outdoor space! We provide expert landscaping services, including design, installation, and maintenance, to create the yard of your dreams.</p>
+          <p><b style="color: green;">THRIVE</b> brings the beauty of nature to your doorstep.  We specialize in eco-friendly landscaping, native plant designs, and stunning water features to create outdoor havens for both people and wildlife.</p>
+          <a href="#services" class="btn btn-custom btn-lg page-scroll">View All Services</a> </div>
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <div class="about-media"> <img src="img/about-1.jpg" alt=" "> </div>
+        <div class="about-desc">
+          <h3>Garden Care</h3>
+          <p>Our Garden Care services provide expert maintenance for vibrant, healthy gardens. We offer weeding, pruning, seasonal planting, mulching, and customized care plans to keep your flower beds and borders looking their best all year round.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <div class="about-media"> <img src="img/about-2.jpg" alt=" "> </div>
+        <div class="about-desc">
+          <h3>Lawn Care</h3>
+          <p>Achieve the lawn of your dreams with our comprehensive Lawn Care services. We provide expert mowing, fertilization, weed control, aeration, and overseeding to create a thick, green, and healthy carpet of grass.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Services Section -->
+<h1>Our Services</h1> 
+    <div class="services-container"> 
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-user"></i> 
+            </div> 
+            <h3>Service Set 1</h3> 
+            <p>Leaf and yard waste - $50 up to 1/4 acre</p>
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-cart-shopping"></i> 
+            </div> 
+            <h3>Service 2</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-toolbox"></i> 
+            </div> 
+            <h3>Service 3</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-brands fa-android"></i> 
+            </div> 
+            <h3>Service 4</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-database"></i> 
+            </div> 
+            <h3>Service 5</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-pen"></i> 
+            </div> 
+            <h3>Service 6</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div>
+		
+		<div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-pen"></i> 
+            </div> 
+            <h3>Service 7</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div>
+
+		<div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-pen"></i> 
+            </div> 
+            <h3>Service 6</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div>
+
+		<div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-pen"></i> 
+            </div> 
+            <h3>Service 6</h3> 
+            <p> 
+                With the idea of imparting programming 
+                knowledge, Mr. Sandeep Jain, an IIT 
+                Roorkee alumnus started a dream, 
+                GeeksforGeeks. Whether programming 
+                excites you or you feel stifled, 
+                how to ace data structures and 
+                algorithms, GeeksforGeeks is a 
+                one-stop solution.</p>
+        </div>
+    </div> 
+<!-- Gallery Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Gallery</h2>
+      <hr>
+      <p>Explore our portfolio of completed landscaping projects. Each image reflects our commitment to quality, creativity, and attention to detail. Find inspiration for your own outdoor space and envision the possibilities for your property.</p>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-4 lawn">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/IMG_0068.JPG" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4></h4>
+              </div>
+              <img src="img/IMG_0068.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 planting">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/IMG_0072.JPG" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4></h4>
+              </div>
+              <img src="img/IMG_0072.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 lawn">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/IMG_0073.JPG" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4></h4>
+              </div>
+              <img src="img/IMG_0073.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 lawn">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/IMG_0074.JPG" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4></h4>
+              </div>
+              <img src="img/IMG_0074.JPG" class="img-responsive" alt="Project Title"> </a></div>
+          </div>
+          <br><br><br>
+          <p style="text-align: center; color: green; font-size: 20px "><b><i>WE ARE THE BEST AROUND</i></b></p>
+        </div>
+        <div class="col-sm-6 col-md-4 planting">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/IMG_0075.JPG" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4></h4>
+              </div>
+              <img src="img/IMG_0075.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 garden">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/IMG_0076.JPG" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4></h4>
+              </div>
+              <img src="img/IMG_0076.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact" class="text-center" >
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Contact Me!</h2>
+      <hr>
+      <p>Get in touch with Mike!</p>
+    </div>
+    <div class="col-md-10 col-md-offset-1 contact-info">
+      <div class="col-md-4">
+        <h3></h3>
+        <hr>
+        <div class="contact-item">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3></h3>
+        <hr>
+        <div class="contact-item">
+          <p style="color: black;"><b>Phone: +1 (608) 512-8219</b></p>
+          <p style="color: black;"><b>Phone: +1 (608) 209-3959</b></p>
+          <p style="color: black;"><b>Email: busheesbushes@gmail.com</b></p>
+          <p style="color: black;"><b>Email: thriveearthworks@gmail.com</b></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3></h3>
+        <hr>
+        <div class="contact-item">
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Leave us a message</h3>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Footer Section -->
+<div id="footer">
+  <div class="container text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <p>&copy; 2024. Designed by <a href="https://nelnel147.github.io/Personal-Portfolio/" rel="nofollow">Nelson Torres</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
